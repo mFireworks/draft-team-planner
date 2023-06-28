@@ -61,7 +61,9 @@ $(document).ready(function() {
 
     function parseFrontSpriteFromPokemon(pokemonEntry) {
         var spriteData = JSON.parse(pokemonEntry.pokemon_v2_pokemonsprites[0].sprites);
-        return spriteData.front_default;
+        if (spriteData.front_default == null)
+            return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
+        return "https://raw.githubusercontent.com/PokeAPI/sprites/master" + spriteData.front_default.replace("media/", "");
     }
 
     // Sorting/Searching/Filtering Functions
