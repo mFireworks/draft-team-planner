@@ -293,7 +293,10 @@ $(document).ready(function() {
         if (!pokemonTeamMoveMap.hazardControl.includes(formatDataString(pokeName)) &&
             (pokemonHasMove(pokemonEntry, "defog") ||
             pokemonHasMove(pokemonEntry, "rapid-spin") ||
-            pokemonHasMove(pokemonEntry, "court-change")))
+            pokemonHasMove(pokemonEntry, "court-change") ||
+            pokemonHasMove(pokemonEntry, "ice-spinner") ||
+            pokemonHasMove(pokemonEntry, "mortal-spin") ||
+            pokemonHasMove(pokemonEntry, "tidy-up")))
                 pokemonTeamMoveMap.hazardControl += formatDataString(pokeName) + ", ";
 
         // Pivots
@@ -303,7 +306,9 @@ $(document).ready(function() {
             pokemonHasMove(pokemonEntry, "parting-shot") ||
             pokemonHasMove(pokemonEntry, "teleport") ||
             pokemonHasMove(pokemonEntry, "u-turn") ||
-            pokemonHasMove(pokemonEntry, "volt-switch")))
+            pokemonHasMove(pokemonEntry, "volt-switch") ||
+            pokemonHasMove(pokemonEntry, "chilly-reception") ||
+            pokemonHasMove(pokemonEntry, "shed-tail")))
                 pokemonTeamMoveMap.pivots += formatDataString(pokeName) + ", ";
 
         // Clerics
@@ -321,8 +326,9 @@ $(document).ready(function() {
             pokemonTeamMoveMap.trickRoom += formatDataString(pokeName) + ", ";
 
         // Priority
-        if (!pokemonTeamMoveMap.priority.includes(formatDataString(pokeName)) &&
-            pokemonEntry.pokemon_v2_pokemonmoves.find(moveEntry => (moveEntry.pokemon_v2_move.priority > 1 && moveEntry.pokemon_v2_move.power !== null)))
+        if (!pokemonTeamMoveMap.priority.includes(formatDataString(pokeName)) && (
+            pokemonEntry.pokemon_v2_pokemonmoves.find(moveEntry => (moveEntry.pokemon_v2_move.priority > 1 && moveEntry.pokemon_v2_move.power !== null)) ||
+            pokemonHasMove(pokemonEntry, "sucker-punch")))
             pokemonTeamMoveMap.priority += formatDataString(pokeName) + ", ";
     }
 
