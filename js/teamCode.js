@@ -294,7 +294,6 @@ $(document).ready(function() {
             (pokemonHasMove(pokemonEntry, "defog") ||
             pokemonHasMove(pokemonEntry, "rapid-spin") ||
             pokemonHasMove(pokemonEntry, "court-change") ||
-            pokemonHasMove(pokemonEntry, "ice-spinner") ||
             pokemonHasMove(pokemonEntry, "mortal-spin") ||
             pokemonHasMove(pokemonEntry, "tidy-up")))
                 pokemonTeamMoveMap.hazardControl += formatDataString(pokeName) + ", ";
