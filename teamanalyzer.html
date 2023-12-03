@@ -1,90 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../styles/basicStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/teamCode.js"></script>
+    <link rel="stylesheet" href="../../../dev/basicStyle.css">
 
     <head>
-            <!-- Required meta tags -->
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <title>Michael Does Coding</title>
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/teamCode.js"></script>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Michael Does Coding</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarCollapse" aria-controls="navBarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Michael Does Coding</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarCollapse" aria-controls="navBarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navBarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownToggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownToggle">
-                            <a class="dropdown-item" href="../../dndmagic.html">DnD Magic Item Generator</a>
-                            <a class="dropdown-item" href="../pmdengine/mysterydungeon.html">Mystery Dungeon Unity Engine</a>
-                            <a class="dropdown-item" href="../pokemon/nuzlockebingo/viewerbingo.html">Viewer Bingo</a>
-                            <a class="dropdown-item active" href="#">Draft League Team Analyzer</a>
-                            <a class="dropdown-item" href="../../discord/assignbot/assignbot.html">Discord AssignBot</a>
-                            <a class="dropdown-item" href="../../school/cdptester.html">PC&sup2; CDP Tester</a>
-                            <a class="dropdown-item" href="../../school/battlesim.html">Dungeon Battle Simulator</a>
-                            <a class="dropdown-item" href="../../school/dictionary.html">Online Dictionary</a>
-                            <a class="dropdown-item" href="../../school/filesystem.html">File System Watcher</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownToggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Links
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownToggle">
-                            <a class="dropdown-item" href="https://github.com/mFireworks">Github</a>
-                        </div>
-                    </li>
-                </ul>
-                <span class="nav-item dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" id="navbarContactDropdownToggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contact
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarContactDropdownToggle">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <h3>
-                                    Contact
-                                </h3>
-                            </div>
-                            <div class="form-group">
-                              <ul>
-                                  <li>Email: longmichael97@gmail.com</li>
-                                  <li>Site made by Michael Long - 2023</li>
-                              </ul>
-                            </div>
-                          </form>
-                    </div>
-                </span>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../gamejournal/landing.html" role="button"aria-haspopup="true" aria-expanded="false">Gaming Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../minecraft/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Minecraft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../landing.html" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../documents/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Documents</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">Youtube</a></li>
+                                <li><a class="dropdown-item" href="https://www.twitch.tv/fireworkmaster9">Twitch</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/mFireworks">Github</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Pokemon Draft League Team Analyzer</h1>
+        <div class="container">
+            <p>
+            <h1>Pokemon Draft League Team Analyzer</h1>
+            </p>
+            <p style="font-size:larger">
+                Easily view important information about a team of pokemon to help prepare for Draft League matches.<br>
+                Have a suggestion or found a bug? You can report them <a href="https://github.com/mFireworks/draft-team-planner/issues">here!</a><br>
                 <br>
-                <p style="font-size:larger">
-                    Easily view important information about a team of pokemon to help prepare for Draft League matches.<br>
-                    Have a suggestion or found a bug? You can report them <a href="https://github.com/mFireworks/draft-team-planner/issues">here!</a><br>
-                    <br>
-                    Powered by <a href="https://pokeapi.co/" target="_blank">PokeAPI</a>
-                </p>
-            </div>
+                Powered by <a href="https://pokeapi.co/" target="_blank">PokeAPI</a>
+            </p>
         </div>
         <main role="main" class="container">
             <div class="row bg-dark text-center rounded mb-4">

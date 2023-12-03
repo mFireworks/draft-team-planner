@@ -63,7 +63,7 @@ $(document).ready(function() {
         var spriteData = JSON.parse(pokemonEntry.pokemon_v2_pokemonsprites[0].sprites);
         if (spriteData.front_default == null)
             return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
-        return "https://raw.githubusercontent.com/PokeAPI/sprites/master" + spriteData.front_default.replace("media/", "");
+        return spriteData.front_default;
     }
 
     // Sorting/Searching/Filtering Functions
@@ -189,9 +189,7 @@ $(document).ready(function() {
         return "<div class=\"col-lg-2 mt-2\">" +
             "<div class=\"card bg-light h-100 pokemonCard Card" + pokemonTeam.length + "\">" +
                 "<div class=\"card-header d-flex justify-content-end\">" +
-                    "<button type=\"button\" class=\"close removeCard\" aria-label=\"Remove Pokemon\">" +
-                        "<span aria-hidden=\"true\">&times;</span>" +
-                    "</button>" +
+                    "<button type=\"button\" class=\"btn-close removeCard\" aria-label=\"Remove Pokemon\"></button>" +
                 "</div>" +
                 "<img class=\"card-img-top\" src=\"" + parseFrontSpriteFromPokemon(pokemonEntry) + "\" alt=\"" + formatDataString(pokemonEntry.name) + " Sprite\">" +
                 "<div class=\"card-footer h-100\">" +
