@@ -60,10 +60,10 @@ $(document).ready(function() {
     }
 
     function parseFrontSpriteFromPokemon(pokemonEntry) {
-        var spriteData = JSON.parse(pokemonEntry.pokemon_v2_pokemonsprites[0].sprites);
-        if (spriteData.front_default == null)
+        var spriteData = pokemonEntry.pokemon_v2_pokemonsprites[0].sprites.front_default;
+        if (spriteData == null)
             return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
-        return spriteData.front_default;
+        return spriteData;
     }
 
     // Sorting/Searching/Filtering Functions
